@@ -36,6 +36,7 @@ class CellProducto: UITableViewCell {
     func configurar_celda(Datos : [Any])
     {
         id = Datos[0] as! Int
+        lblNombreProducto.layer.cornerRadius = lblNombreProducto.frame.size.height/4.0
         lblNombreProducto.text = Datos[2] as! String
     
     }
