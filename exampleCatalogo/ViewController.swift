@@ -21,11 +21,8 @@ class ViewController: UIViewController,EnviarDatos,UICollectionViewDelegate,UICo
     var arrImg = [Any]()
     
     func enviarproducto(producto: [Any]?) {
-        lblNombre.layer.cornerRadius = lblNombre.frame.size.height/4.0
         lblNombre.text = producto![2] as! String
-        lblNombre.layer.cornerRadius = lblNombre.frame.size.height/4.0
         lblPrecio.text = "Precio: $ \(producto![3] as! Int)"
-        lblNombre.layer.cornerRadius = lblNombre.frame.size.height/4.0
         lblCategoria.text = "Categoria: \(producto![1] as! String)"
         arrImg = producto![4] as! [Any]
     }
